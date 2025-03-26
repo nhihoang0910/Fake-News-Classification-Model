@@ -9,7 +9,9 @@
 ---
 
 ## Project Background  
-This project aimed to build a fake news detection model using Decision Tree, Support Vector Machine (SVM), and Long SHort-Term Memory from Scikit-learn Libraries in Python. We used WELFake Dataset, uploaded on Kaggle, that consisted of 72,134 news articles with 35,028 real and 37,106 fake news. This dataset combined real news from 4 sites - Kaggle, McIntire, Reuters, BuzzFeed Political - to prevent overfitting.  
+This project aimed to build a fake news detection model using Decision Tree, Support Vector Machine (SVM), and Long SHort-Term Memory from Scikit-learn Libraries in Python. We used **WELFake Dataset**, uploaded on Kaggle, that consisted of 72,134 news articles with 35,028 real and 37,106 fake news. This dataset combined real news from 4 sites - Kaggle, McIntire, Reuters, BuzzFeed Political - to prevent overfitting.  
+
+![Screenshot 2025-03-26 at 9 35 37 AM](https://github.com/user-attachments/assets/003c191f-253d-4f05-87b3-04a0f2998ea9)
 
 Find more details about the dataset [here](https://www.kaggle.com/datasets/saurabhshahane/fake-news-classification/data)
 
@@ -29,7 +31,7 @@ I used Scikit-learn and NLTK libraries to process textual data before training t
 ---
 
 ## Model & Results  
-SVM aims to find the optimal hyperplane in N-dimensional space to separate data points into the targeted classes - fake and real news. SVM uses overfitting protection to handle data with large dimensionality. I trained the model using different kernel threshold functions to maximize the margin between the hyperplane and data points from each class. The model with Linear Kernel functions, which uses a straight line for classification, yielded the highest accuracy score on the testing dataset compared to other kernel functions - Polynomial, Sigmoid, and Radial Basis Function (RBF) classifiers.  
+SVM aims to find the optimal hyperplane in N-dimensional space to separate data points into the targeted classes - fake and real news. SVM uses overfitting protection to handle data with large dimensionality. I trained the model using different kernel threshold functions to maximize the margin between the hyperplane and data points from each class. The model with **Linear Kernel functions**, which uses a straight line for classification, yielded the highest accuracy score on the testing dataset compared to other kernel functions - Polynomial, Sigmoid, and Radial Basis Function (RBF) classifiers.  
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/c6ecac6c-455e-46f1-9c20-15833bc2a783" alt="Kernel Functions Comparison"/>
@@ -37,7 +39,7 @@ SVM aims to find the optimal hyperplane in N-dimensional space to separate data 
   <em>Figure 1: Kernel Functions Comparison</em>
 </p>
 
-Below are the results for SVM model with linear kernel function. I did not find any significant difference in accuracy score after testing out different parameters for gamma, so I proceeded with the auto value for gamma. This model achieved 93.5% for all evaluation metrics, including accuracy score, precision, recall, and F-1 score. The accuracy score for the  Linear Kernel Function is higher than other kernels, but the difference is not significant. The ROC curve shows a slightly better result in making true predictions compared to the ROC curve of Decision Tree. The difference between the number of True Positive and True Negative predictions is less extreme compared to Decision Trees. 
+Below are the results for SVM model with linear kernel function. I did not find any significant difference in accuracy score after testing out different parameters for gamma, so I proceeded with the auto value for gamma. This model achieved **93.5%** for all evaluation metrics, including accuracy score, precision, recall, and F-1 score. The accuracy score for the  Linear Kernel Function is higher than other kernels, but the difference is not significant. The ROC curve shows a slightly better result in making true predictions compared to the ROC curve of Decision Tree. The difference between the number of True Positive and True Negative predictions is less extreme compared to Decision Trees. 
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/edbcce68-5e78-4366-a53f-624a30a13609" alt="ROC Curve"/>

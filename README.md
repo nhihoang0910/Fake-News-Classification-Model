@@ -11,5 +11,5 @@ Find more details [HERE]([https://catalog.data.gov/dataset/crimes-one-year-prior
 
 # Data Processing
 
-# Main Findings
-# Insight Deep Dive
+# Model & Results
+# Limitations
